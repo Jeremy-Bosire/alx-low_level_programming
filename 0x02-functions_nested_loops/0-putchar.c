@@ -10,8 +10,9 @@
 int main(void)
 {
 	char function[] = "_putchar";
+	int i;
 
-	for (int i = 0; i < MAXSTRING; i++)
+	for (i = 0; i < MAXSTRING; i++)
 	{
 		_putchar(function[i]);
 		if (function[i] == '\0')
