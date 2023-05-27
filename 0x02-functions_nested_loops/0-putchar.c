@@ -1,6 +1,6 @@
 #define MAXSTRING 80
 #include <unistd.h>
-int _putchar(char c);
+#include "main.h"
 
 /**
  * main - Entry point
