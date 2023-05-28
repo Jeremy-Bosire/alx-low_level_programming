@@ -14,7 +14,7 @@ int main(void)
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
-		if (str[i+1] == '\0')
+		if (str[i + 1] == '\0')
 		{
 			_putchar('\n');
 			break;
