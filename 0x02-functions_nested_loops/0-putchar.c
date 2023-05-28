@@ -1,6 +1,6 @@
+#include "main.h"
 #define MAXSTRING 80
 #include <unistd.h>
-#include "main.h"
 
 /**
  * main - Entry point
@@ -9,13 +9,13 @@
  */
 int main(void)
 {
-	char function[] = "_putchar";
+	char *str= "_putchar";
 	int i;
 
 	for (i = 0; i < MAXSTRING; i++)
 	{
-		_putchar(function[i]);
-		if (function[i] == '\0')
+		_putchar(str[i]);
+		if (str[i] == '\0')
 		{
 			_putchar('\n');
 			break;
