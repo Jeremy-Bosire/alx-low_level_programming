@@ -20,6 +20,10 @@ void puts2(char *str)
 		{
 			n++;
 		}
+		if (str[n] == '\n')
+		{
+			break;
+		}
 		_putchar(str[n]);
 		n++;
 	}
