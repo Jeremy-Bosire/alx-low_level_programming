@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+ * puts2 - Prints every other character of a string
+ *
+ * @str: String variable
+ */
+void puts2(char *str)
+{
+	int n;
+
+	n = 0;
+	while (s[n] != '\0')
+	{
+		if (n % 2 != 0)
+		{
+			n++;
+		}
+		_putchar(s[n]);
+		n++;
+	}
+	_putchar('\n');
+}
