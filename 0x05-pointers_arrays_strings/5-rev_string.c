@@ -21,7 +21,7 @@ void rev_string(char *s)
 		int t = s[start];
 
 		s[start] = s[end];
-		s[end] = s[start];
+		s[end] = t;
 		start++;
 		end--;
 	}
