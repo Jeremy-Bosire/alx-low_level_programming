@@ -20,7 +20,7 @@ void puts2(char *str)
 		{
 			n++;
 		}
-		if (str[n] == '\n')
+		if (str[n] == '\0')
 		{
 			break;
 		}
