@@ -7,7 +7,6 @@
  */
 int _atoi(char *s)
 {
-	signed int z[];
 	int n, k, i, j;
 
 	n = 0;
@@ -15,6 +14,8 @@ int _atoi(char *s)
 	{
 		n++;
 	}
+	signed int z[n];
+
 	for (k = 0; k < n; k++)
 	{
 		z[k] = s[k];
