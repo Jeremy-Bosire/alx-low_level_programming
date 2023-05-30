@@ -17,7 +17,7 @@ int _atoi(char *s)
 	}
 	for (k = 0; k < n; k++)
 	{
-		z[k] = s[k];
+		*z[k] = s[k];
 	}
 	for (i = '0'; i <= '9'; i++)
 	{
@@ -25,7 +25,7 @@ int _atoi(char *s)
 		{
 			if (s[j] == i)
 			{
-				return (*z);
+				return (z);
 			}
 			else
 			{
