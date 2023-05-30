@@ -7,7 +7,7 @@
  */
 int _atoi(char *s)
 {
-	signed int z;
+	signed int *z;
 	int n, k, i, j;
 
 	n = 0;
@@ -17,7 +17,7 @@ int _atoi(char *s)
 	}
 	for (k = 0; k < n; k++)
 	{
-		*z[k] = s[k];
+		z[k] = s[k];
 	}
 	for (i = '0'; i <= '9'; i++)
 	{
@@ -34,3 +34,4 @@ int _atoi(char *s)
 		}
 	}
 	return (0);
+}
