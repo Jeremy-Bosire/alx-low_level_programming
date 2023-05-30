@@ -7,7 +7,7 @@
  */
 int _atoi(char *s)
 {
-	signed int *z;
+	signed int z[];
 	int n, k, i, j;
 
 	n = 0;
