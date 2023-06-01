@@ -13,15 +13,15 @@ int print_last_digit(int x)
 	if (!(x > -10 && x < 10))
 	{
 		n = x % 10;
-		p = _putchar (n);
+		p = _putchar (n + '0');
 	}
 	else if (x >= 0 && x < 10)
 	{
-		p = _putchar (x);
+		p = _putchar (x + '0');
 	}
 	else
 	{
-		p = _putchar (-x);
+		p = _putchar (-x + '0');
 	}
 	return (p);
 }
