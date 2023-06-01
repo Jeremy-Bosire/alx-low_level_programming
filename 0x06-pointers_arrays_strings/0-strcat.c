@@ -22,9 +22,9 @@ char *_strcat(char *dest, char *src)
 		m++;
 	}
 	s = m + n;
-	i = m + 1;
+	i = m - 1;
 	j = 0;
-	while (i > m)
+	while (i <= s)
 	{
 		if (i == s)
 		{
