@@ -16,11 +16,6 @@ int print_last_digit(int x)
 		_putchar (n + '0');
 		return (n);
 	}
-	else if (x >= 0 && x < 10)
-	{
-		_putchar (x + '0');
-		return (x);
-	}
 	else
 	{
 		_putchar (x + '0');
