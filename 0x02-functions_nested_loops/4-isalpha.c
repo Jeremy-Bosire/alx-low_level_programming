@@ -4,6 +4,7 @@
  * _isalpha - Checks for alphabetic characters
  *
  * Return: Either 0 or 1 (Depends on the input)
+ * @c: Integer variable
  */
 int _isalpha(int c)
 {
