@@ -5,7 +5,7 @@
  *
  * Return: Either 0 or 1 (Based on input)
  *
- * c - character value
+ * @c: Integer variable
  */
 int _islower(int c)
 {
