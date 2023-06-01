@@ -8,17 +8,33 @@
  */
 int print_last_digit(int x)
 {
-	int n;
+	int n, p;
 
 	if (!(x > -10 && x < 10))
 	{
-		n = x % 10;
-		_putchar (n + '0');
-		return (n);
+		if (x <= -10)
+		{
+			p = -x;
+			n = p % 10;
+			_putchar (n + '0');
+			return (n);
+		}
+		else
+		{
+			n = x % 10;
+			_putchar (n + '0');
+			return (n);
+		}
 	}
-	else
+	else if (x >= 0 && x < 10)
 	{
 		_putchar (x + '0');
 		return (x);
+	}
+	else
+	{
+		p = -x;
+		_putchar (p + '0');
+		return (p);
 	}
 }
