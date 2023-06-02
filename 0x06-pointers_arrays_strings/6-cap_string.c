@@ -10,7 +10,6 @@ char *cap_string(char *mum)
 	int i, change, mum_length;
 	char special[] = " \t\n,;.!?\"(){}";
 	int j;
-	int isSpecial = 0;
 
 	i = 0;
 	change = 0;
@@ -19,20 +18,15 @@ char *cap_string(char *mum)
 	{
 		mum_length++;
 	}
-	for (j = 0; special[j] != '\0'; j++)
-	{
-		if (mum[i - 1] == special[j])
-		{
-			isSpecial = 1;
-			break;
-		}
-	}
 	while (i < mum_length)
 	{
-		if (isSpecial && (mum[i] >= 'a' && mum[i] <= 'z'))
+		for (j = 0; special[j] != '\0'; j++)
 		{
-			change = mum[i] - 32;
-			mum[i] = change;
+			if (mum[i - 1] == special[j] && (mum[i] >= 'a' && mum[i] <= 'z'))
+			{
+				change = mum[i] - 32;
+				mum[i] = change;
+			}
 		}
 		i++;
 	}
