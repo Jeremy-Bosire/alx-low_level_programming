@@ -10,6 +10,10 @@ char *_strchr(char *s, char c)
 {
 	int n;
 
+	if (s == NULL)
+	{
+		return (NULL);
+	}
 	n = 0;
 	while (s[n] != '\0')
 	{
