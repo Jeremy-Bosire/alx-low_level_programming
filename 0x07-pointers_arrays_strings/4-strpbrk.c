@@ -18,6 +18,10 @@ char *_strpbrk(char *s, char *accept)
 	{
 		m++;
 	}
+	if (m == 0)
+	{
+		return (NULL);
+	}
 	while (i <= m)
 	{
 		if (s[k] != accept[j])
