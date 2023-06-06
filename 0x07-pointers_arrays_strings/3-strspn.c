@@ -8,15 +8,19 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int x, n, temp;
+	unsigned int m, n;
 
+	m = 0;
 	n = 0;
 	while (*accept != '\0')
 	{
 		accept++;
+		m++;
+	}
+	while (n <= m && *s != '\0')
+	{
+		s++;
 		n++;
 	}
-	x = n * sizeof(*accept);
-	temp = sizeof(*s) + x;
-	return (temp);
+	return (n);
 }
