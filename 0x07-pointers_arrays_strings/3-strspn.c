@@ -8,7 +8,7 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int m, n;
+	unsigned int m, n, x, y;
 
 	m = 0;
 	n = 0;
@@ -17,10 +17,12 @@ unsigned int _strspn(char *s, char *accept)
 		accept++;
 		m++;
 	}
+	x = sizeof(*accept);
 	while (n <= m && *s != '\0')
 	{
 		s++;
 		n++;
 	}
-	return (n);
+	y = x * n;
+	return (y);
 }
