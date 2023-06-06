@@ -8,21 +8,29 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int m, n, x, y;
+	unsigned int m, n, i, j;
 
 	m = 0;
 	n = 0;
-	while (*accept != '\0')
+	i = 0;
+	j = 0;
+	while (accept[m] != '\0')
 	{
-		accept++;
 		m++;
 	}
-	x = sizeof(*accept);
-	while (n <= m && *s != '\0')
+	while (i <= m)
 	{
-		s++;
-		n++;
+		if (s[n] == accept[j])
+		{
+			n++;
+			j = 0;
+			i = 0;
+		}
+		else
+		{
+			j++;
+		}
+		i++;
 	}
-	y = x * n;
-	return (y);
+	return (n);
 }
