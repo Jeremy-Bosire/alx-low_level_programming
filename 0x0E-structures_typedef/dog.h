@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdlib.h>
 /**
  * struct dog - Contains the information bundle required for dogs
  * @name: First member
