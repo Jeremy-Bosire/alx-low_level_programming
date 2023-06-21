@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef dog_h
+#define dog_h
 #include <stdlib.h>
 #include <stdio.h>
 /**
